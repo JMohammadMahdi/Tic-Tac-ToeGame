@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tok Toe Game</title>
+  <link rel="stylesheet" href="./style..css">
+  <!-- FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="./webfonts/all.css">
+</head>
+<body>
+  <main>
+    <div class="head">
+      <div class="players-icon d-flex">
+        <img src="./icon/Multiply.svg" alt="Multiply" width="23" height="23">
+        <span class="circle"></span>
+      </div>
+      <div class="players-turn d-flex">
+        <svg id="xPlayer" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25" height="25" style="enable-background:new 0 0 512 512" viewBox="0 0 512 512"><path fill="#A8BEC9ff" d="M431.6 512c-21.3.1-41.8-8.4-56.9-23.5L256 369.7 137.3 488.5c-31.3 31.5-82.2 31.7-113.7.4s-31.8-82.2-.5-113.7l.5-.5L142.3 256 23.6 137.3c-31.3-31.6-31.1-82.5.5-113.8 31.3-31.1 81.9-31.1 113.2 0L256 142.3 374.7 23.5C406-8 456.9-8.2 488.5 23.1s31.8 82.2.5 113.7l-.5.5L369.8 256l118.7 118.7c31.4 31.4 31.4 82.3 0 113.7-15.1 15.1-35.6 23.6-56.9 23.6z" data-original="#000000"/></svg>
+        <span id="oPlayer" class="circle circle-Inturn" style="display: none;"></span>
+        TURN
+      </div>
+      <div class="return d-flex">
+        <img src="./icon/Return.svg" width="20px" height="20px" alt="Return">
+      </div>
+    </div>
+    <div class="key-main">
+      <button class="keys d-flex test" id="1"></button>
+      <button class="keys d-flex" id="2"></button>
+      <button class="keys d-flex" id="3"></button>
+      <button class="keys d-flex" id="4"></button>
+      <button class="keys d-flex" id="5"></button>
+      <button class="keys d-flex" id="6"></button>
+      <button class="keys d-flex" id="7"></button>
+      <button class="keys d-flex" id="8"></button>
+      <button class="keys d-flex" id="9"></button>
+    </div>
+    <div class="game-information">
+      <div class="player-win">
+        <h5>X (YOU)</h5>
+        <h2>0</h2>
+      </div>
+      <div class="Ties">
+        <h5>TIES</h5>
+        <h2>0</h2>
+      </div>
+      <div class="cpu-win">
+        <h5>O (RIVAL)</h5>
+        <h2>0</h2>
+      </div>
+      <span class="Line"></span>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

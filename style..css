@@ -1,0 +1,144 @@
+:root {
+    --gunmetal: #192A32ff;
+    --xanthous: #F2B237ff;
+    --robin-egg-blue: #31C4BEff;
+    --powder-blue: #A8BEC9ff;
+    --gunmetal-2: #1F3540ff;
+    --shadow: 0px 8px 0 0 #0F2028ff;
+    --borderRadius: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gunmetal);
+}
+
+.circle-Inturn {
+    border: 9px solid var(--powder-blue) !important;
+}
+
+.circle-Inkeys {
+    transform: scale(2);
+}
+
+.circle {
+    width: 7px;
+    height: 7px;
+    border: 9px solid var(--xanthous);
+    border-radius: 50%;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.players-icon {
+    gap: 5px;
+}
+
+.players-turn {
+    max-width: 120px;
+    background: var(--gunmetal-2);
+    color: var(--powder-blue);
+    border-radius: var(--borderRadius);
+    padding: 10px 25px;
+    gap: 15px;
+    box-shadow: 0px 4px 0 0 #0F2028ff;
+    transition: transform 0.150s, box-shadow 0.150s;
+}
+
+.return {
+    width: 25px;
+    height: 25px;
+    background: var(--powder-blue);
+    border-radius: var(--borderRadius);
+    padding: 10px;
+    box-shadow: 0px 4px 0 0 #5C7784ff;
+    transition: transform 0.150s, box-shadow 0.150s;
+    margin-left: 8px;
+}
+
+.return:hover,
+.keys:hover {
+    box-shadow: none;
+    transform: translateY(4px);
+    cursor: pointer;
+}
+
+.key-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.keys {
+    height: 100px;
+    border-radius: var(--borderRadius);
+    background: var(--gunmetal-2);
+    border: none;
+    box-shadow: var(--shadow);
+    transition: transform 0.150s, box-shadow 0.150s;
+}
+
+.game-information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+}
+
+.player-win {
+    background: var(--robin-egg-blue);
+}
+
+.Ties {
+    background: var(--powder-blue);
+}
+
+.cpu-win {
+    background: var(--xanthous);
+}
+
+.player-win,
+.Ties,
+.cpu-win {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--gunmetal);
+    padding: 10px;
+    border-radius: var(--borderRadius);
+}
+
+.Line {
+    height: 5px;
+    background: var(--powder-blue);
+    border-radius: 10px;
+    transition: transform 0.3s linear;
+    transform: translateX(0px);
+    opacity: 0.7;
+    /* 0 / 140px / 280px */
+}
